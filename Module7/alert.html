@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml/">
+<head>
+
+  <title>Alert message</title>
+  <body>
+    <h3>Showing alert while closing page for unsaved data</h3>
+    <input type ="text">
+    <button onclick="save()">Save</button>
+
+  </body>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js" ></script>
+
+  <script type="text/javascript">
+  $(function() {
+    $(window).on('beforeunload',function()
+    {
+      return '';
+    })
+  });
+  </script>
+</head>
+</html>
