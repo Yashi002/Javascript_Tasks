@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+
+    <title>ImageLoading</title>
+  </head>
+  <body>
+    <img  id="img" width="70%",height="auto" >
+    <script type="text/javascript">
+      var img =document.getElementById('img');
+      alert("The searched javascript icon is broken");
+      img.src= "https://blog.logrocket.com/wp-020/12/javascript-custom-events.png";
+      img.onerror = function(){
+        img.src= "https://blog.logrocket.com/wp-content/uploads/2020/12/javascript-custom-events.png"
+      }
+
+    </script>
+
+  </body>
+</html>
