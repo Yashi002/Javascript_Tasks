@@ -1,0 +1,9 @@
+<button type="button" id="btn" name="button">Click</button>
+<script type="text/javascript">
+
+  addEventListener("Hello", function(){
+    alert("Hello All");
+  })
+  let event = new Event("Hello", {bubbles:true});
+  document.dispatchEvent(event);
+</script>

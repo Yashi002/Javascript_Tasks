@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Browser</title>
+  </head>
+  <body>
+    <h2>On right clicking, nothing will be happen, as default settings are that way in this program</h2>
+    <script type="text/javascript">
+      document.oncontextmenu = preventDefaultAction;
+      function preventDefaultAction(event){
+        event = event || window.event;
+
+        if(event.preventDefault){
+          event.preventDefault();
+        }
+          else{
+            event.returnValue = false;
+          }
+      }
+    </script>
+  </body>
+</html>
