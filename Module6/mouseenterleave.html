@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mouse Event</title>
+  </head>
+  <body>
+    <div id="mydiv" style="background-color: #80ced6; width:100px; height:100px;">
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mydiv").onmouseenter = MouseEnter;
+        document.getElementById("mydiv").onmouseleave = MouseLeave;
+        function MouseEnter(){
+          document.getElementById("mydiv").style.background = "violet";
+        }
+        function MouseLeave(){
+          document.getElementById("mydiv").style.background = "yellow";
+        }
+
+    </script>
+  </body>
