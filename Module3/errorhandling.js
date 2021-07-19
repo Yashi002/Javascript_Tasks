@@ -1,8 +1,7 @@
-/* try,catch,finally,throw*/
-/*catch- handle the error*/
-/*throw-create to custom error*/
-/*finally{} - execute code after trying catch*/
-/**/
+// used try,catch,finally,throw
+//catch- handle the error
+//throw-create to custom error
+//finally{} - execute code after trying catch
 
 try{
   console.log("let's see for try");
